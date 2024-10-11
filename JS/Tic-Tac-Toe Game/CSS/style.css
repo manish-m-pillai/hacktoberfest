@@ -29,6 +29,26 @@ body {
     font-weight: bold;
 }
 
+.reset {
+    width: 175px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #4c6986;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 30px;
+}
+    
+
+.reset:hover {
+    background: #4c6986;
+    color: white;
+}
+
 .restart {
     width: 175px;
     height: 50px;
@@ -132,6 +152,17 @@ body {
 
 .tile-winner span{
     color: #23CE6B;
+}
+
+.scores{
+    margin-top: 40px;
+    border: 2px solid #4c6986;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.scores p{
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 1200px) {

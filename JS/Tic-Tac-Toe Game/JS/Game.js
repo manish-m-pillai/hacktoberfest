@@ -2,7 +2,14 @@ export default class Game {
 
 
     constructor(){
-        this.turn = "X";
+        // Generate a random 0 or 1 for first chance
+        let randomNumber = Math.floor(Math.random() * 2);
+        if (randomNumber==0) {
+            this.turn = "X";
+        }
+        else{
+            this.turn = "O";
+        }
         this.board = new Array(9).fill(null)
     }
 
@@ -21,7 +28,7 @@ export default class Game {
             return;
         }
 
-        if(this.board[i]){
+        if(this.board[i]){  
             return;
         }
         this.board[i] = this.turn; 
